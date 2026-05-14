@@ -44,7 +44,7 @@
 }
   header{
     background-color: var(--lightercol);
-    color: white;
+    color: rgb(242, 235, 235);
     padding: 1.2rem;
     display: flex;
     justify-content: space-between;

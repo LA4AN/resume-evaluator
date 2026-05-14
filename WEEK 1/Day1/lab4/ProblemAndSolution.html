@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Broken Registration Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bootcamp Registration</h1>
+      <img src="https://placehold.co/640x360/png?text=Bootcamp+Room" alt="wecloudData" />
+    </header>
+
+    <main>
+      <form action="/register" method="post">
+        <fieldset>
+          <legend>Contact details</legend>
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="email">Confirm email</label>
+          <input type="email" id="ConfirmEmail" name="confirmEmail" required />
+
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+55 11 99999-9999"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Study track</legend>
+          <p class="helper-text">
+            Choose one study track
+        </p>
+            <div class="hint">Select the path that matches your goal.</div>
+          </p>
+
+          <input
+            type="radio"
+            id="track-frontend"
+            name="track"
+            value="frontend"
+            required
+          />
+          <label for="track-frontend">Frontend</label>
+
+          <input
+            type="radio"
+            id="track-backend"
+            name="track"
+            value="backend"
+          />
+          <label for="track-backend">Backend</label>
+        </fieldset>
+
+        <button>Register</button>
+      </form>
+    </main>
+  </body>
+</html>
